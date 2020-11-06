@@ -34,20 +34,14 @@ function computer(name, price, description, featureList, imageLink) {
   const HuaweiMateBook13 = new computer("Huawei MateBook 13", "7 996 kr", "Huawei MateBook 13 matches good prestanda with an attractive design. The laptop is perfect for journeys and comes in an elegant and ultra thin aluminium chassis which is 1,49 cm thin and has a weight of 1,3 kg.", "Features: Intel® Core™ i5-8265U processor,  13-inch 1440p screen (3:2-format) and Nvidia GeForce MX250 -grafik 2 GB", "https://www.elgiganten.se/product/datorer-tillbehor/barbar-dator/windows-laptops/51203/huawei-matebook-13-core-i5-ssd-256-gb-nvidia-mx250-barbar-dator-gra");
 
   /*
-  document.getElementById("demo").innerHTML =
-  "My father is " + myFather.age + "."; 
-
-
 var laptops = ['New Apple MacBook Pro', 'Lenovo IdeaPad 3', 'ASUS E410','Huawei MateBook 13'],
     select = document.getElementById( 'laptops' );
 
 for( laptop in laptops ) {
     
     select.add( new Option( laptops[laptop] ) );
-    
 };
 
 computerList.addEventListener("change", function() {
-    //DOM Manipulation here
 }
 */
