@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>komputerStore</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+        <style>
+        .flexContainer {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+        }
+
+        .flexContainer > div {
+          margin: 10px;
+          padding: 20px;
+          font-size: 30px;
+          width: 20%;
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        
+        .flexContainer > div:nth-child(4n) {
+            width: 100%;
+        }
+
+        </style>
+</head>
+<body>
+    <header>
+        <div id="header">
+            <h1 style="font-size:5vw">Komputer Store</h1>
+        </div>
+    </header>
+
+    <div id="komputer" class= "flexContainer">
+        <div id="bankContainer"><label><b>Bank</b></label>
+            <div class="styler">
+            <p>Balance: 400 kr </p>
+            <p>Loan: </p>
+            <p id="moneyLoan">0 kr</p>
+            <button type="button" id="btnBankContainer" onclick="loan()">Get a loan</button>
+            </div>
+        </div>
+
+        <div id="workContainer"><label><b>Work</b></label>
+            <div class="styler">
+            <p>Pay: </p>
+            <p id="pay">0 kr</p>
+            <button id="btnWorkContainerBank">Work</button>
+            <button type="button" id="btnWorkContainerWork" onclick="working()">Bank</button>
+        </div>
+    </div>
+        <div id="laptopsContainer"><label><b>Laptops</b></label>
+
+        <form name="form1">
+        <select name="jumpmenu" onChange="jumpto(document.form1.jumpmenu.options[document.form1.jumpmenu.options.selectedIndex].value)">
+        <option>Computers...</option>
+        <option>New Apple MacBook Pro</option>
+        <option>Lenovo IdeaPad 3</option>
+        <option>ASUS E410</option>
+        <option>Huawei MateBook 13</option>
+        </select>
+    </form>
+        </div>
+      </div>
+
+        <div id="buyLaptopContainer">
+            <button id="btnBuyLaptopContainer"><b>BUY NOW</b></button>
+        </div>  
+      </div>
+    
+    <script src="script.js" type="text/javascript">
+</script>
+</body>
+</html>
+
